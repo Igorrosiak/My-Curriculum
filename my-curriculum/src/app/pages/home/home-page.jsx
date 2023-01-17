@@ -1,5 +1,5 @@
 import React from "react";
-
+import { HeaderComponent } from "../../components/header/header-component";
 import "./home-page.scss";
 
 export default class HomePage extends React.Component {
@@ -7,9 +7,7 @@ export default class HomePage extends React.Component {
   render() {
     return (
       <div className="home-page">
-        <div className="header">
-
-        </div>
+        <HeaderComponent />
 
         <section className="introduction">
           <div className="left-introduction">
