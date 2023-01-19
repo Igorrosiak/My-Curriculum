@@ -3,6 +3,8 @@ import "./skills-component.scss"
 export const SkillsComponent = props => {
   return (
     <main className="skills-component">
+      <h2>Skills</h2>
+      
       <div className="row">
         <div>
           <img src="#" alt="Image Icon ReactJS" />
@@ -25,7 +27,7 @@ export const SkillsComponent = props => {
           <h4>MySQL</h4>
         </div>
       </div>
-      
+
       <div className="row">
         <div>
           <img src="#" alt="Image Icon Git" />
