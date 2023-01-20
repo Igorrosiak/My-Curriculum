@@ -2,9 +2,9 @@ import * as S from "./certificates-styles";
 
 export const CertificatesComponent = props => {
   return (
-    <S.Works>
+    <S.Certificates>
       <div></div>
       <div></div>
-    </S.Works>
+    </S.Certificates>
   );
 }

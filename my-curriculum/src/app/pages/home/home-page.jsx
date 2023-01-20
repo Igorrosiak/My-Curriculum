@@ -5,6 +5,8 @@ import { IntroductionComponent } from "../../components/introduction/introductio
 import { SkillsComponent } from "../../components/skills/skills-component"
 import { WorksComponent } from "../../components/works/works-component"
 import { AboutMeComponent } from "../../components/about-me/about-me-component";
+import { Certificates } from "../../components/certificates/certificates-styles";
+import { FooterComponent } from "../../components/footer/footer-component";
 
 export default class HomePage extends React.Component {
 
@@ -16,17 +18,8 @@ export default class HomePage extends React.Component {
         <SkillsComponent />
         <WorksComponent />
         <AboutMeComponent />
-
-        <section className="certificates">
-
-        </section>
-
-        <footer>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </footer>
+        <Certificates />
+        <FooterComponent />
       </div>
     );
   }
