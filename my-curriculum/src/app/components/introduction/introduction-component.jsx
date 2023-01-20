@@ -1,4 +1,4 @@
-import "./introduction-component.scss"
+import "./introduction-styles"
 
 export const IntroductionComponent = props => {
   return (

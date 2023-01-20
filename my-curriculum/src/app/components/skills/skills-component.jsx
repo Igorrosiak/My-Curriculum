@@ -1,4 +1,4 @@
-import "./skills-component.scss"
+import "./skills-styles"
 
 export const SkillsComponent = props => {
   return (

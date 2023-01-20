@@ -1,6 +1,10 @@
 import React from "react";
+import "./home-styles";
 import { HeaderComponent } from "../../components/header/header-component";
-import "./home-page.scss";
+import { IntroductionComponent } from "../../components/introduction/introduction-component";
+import { SkillsComponent } from "../../components/skills/skills-component"
+import { WorksComponent } from "../../components/works/works-component"
+import { AboutMeComponent } from "../../components/about-me/about-me-component";
 
 export default class HomePage extends React.Component {
 
@@ -8,48 +12,13 @@ export default class HomePage extends React.Component {
     return (
       <div className="home-page">
         <HeaderComponent />
-
-        <section className="introduction">
-          <div className="left-introduction">
-
-          </div>
-          <div className="center-introduction">
-
-          </div>
-          <div className="right-introduction">
-
-          </div>
-        </section>
-
-        <section className="skills">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </section>
-
-        <section className="works">
-          <div></div>
-          <div></div>
-        </section>
-
-        <section className="about-me">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </section>
+        <IntroductionComponent />
+        <SkillsComponent />
+        <WorksComponent />
+        <AboutMeComponent />
 
         <section className="certificates">
-          
+
         </section>
 
         <footer>

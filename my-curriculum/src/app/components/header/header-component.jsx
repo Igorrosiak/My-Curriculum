@@ -1,4 +1,4 @@
-import "./header-component.scss"
+import "./header-styles"
 
 export const HeaderComponent = props => {
   return (
