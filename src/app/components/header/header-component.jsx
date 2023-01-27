@@ -1,22 +1,24 @@
-import "./header-styles"
+import { Container, Nav, Navbar } from 'react-bootstrap';
 
 export const HeaderComponent = props => {
   return (
     <header>
-      <nav>
-        <div className="logo">
-
-        </div>
- 
-        <ul>
-          <a href="#"><li>Home</li></a>
-          <a href="#"><li>Skills</li></a>
-          <a href="#"><li>Works</li></a>
-          <a href="#"><li>About Me</li></a>
-          <a href="#"><li>Certificates</li></a>
-          <a href="#"><li>Contact</li></a>
-        </ul>
-      </nav>
+      <Navbar bg="light" expand="lg">
+        <Container>
+          <Navbar.Brand href="#home">IR.</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link href="#link">Skills</Nav.Link>
+              <Nav.Link href="#link">Works</Nav.Link>
+              <Nav.Link href="#link">About Me</Nav.Link>
+              <Nav.Link href="#link">Certificates</Nav.Link>
+              <Nav.Link href="#link">Contact</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     </header>
   );
 }
