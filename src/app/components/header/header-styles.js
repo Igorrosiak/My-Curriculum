@@ -3,6 +3,7 @@ import { Navbar } from "react-bootstrap"
 import { themes } from "../../../utils/theme"
 
 export const Header = styled.header`
+  height: 10vh;
   background-color: ${themes.colors.background_strong};
 `
 

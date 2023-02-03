@@ -1,10 +1,11 @@
 import "./introduction-styles"
+import * as S from "./introduction-styles";
 
 export const IntroductionComponent = props => {
   return (
-    <main className="introduction-component">
+    <S.Introduction>
       <div className="left-container">
-        <h2>Igor Rosiak<strong>.</strong></h2>
+        <h2>Igor <br /> Rosiak<strong>.</strong></h2>
         <hr />
         <p>17 anos, Estudante</p>
         <button>Contact Me</button>
@@ -23,12 +24,12 @@ export const IntroductionComponent = props => {
           <hr />
           <p>ReactJS | Java | Javascript</p>
         </div>
-        <div>
+        <div className="mt-5">
           <h3>Sobre Mim</h3>
           <hr />
           <p>Apaixonado por tecnologia, aspirante em estar entre os melhores e ser referência.</p>
         </div>
       </div>
-    </main>
+    </S.Introduction>
   );
 }
