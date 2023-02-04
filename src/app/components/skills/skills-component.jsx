@@ -1,4 +1,4 @@
-import "./skills-styles"
+import * as S from "./skills-styles"
 import reactIcon from "../../../assets/react-icon.png"
 import jsIcon from "../../../assets/js-icon.png"
 import javaIcon from "../../../assets/java-icon.png"
@@ -17,9 +17,10 @@ import notionIcon from "../../../assets/notion-icon.png"
 
 export const SkillsComponent = props => {
   return (
-    <main className="skills-component">
+    <S.Skills>
       <h2>Skills</h2>
-
+      <hr />
+      
       <div className="row">
         <div>
           <img src={reactIcon} alt="Icon React" />
@@ -41,9 +42,6 @@ export const SkillsComponent = props => {
           <img src={mySqlIcon} alt="Icon MySQL" />
           <h4>MySQL</h4>
         </div>
-      </div>
-
-      <div className="row">
         <div>
           <img src={gitIcon} alt="Icon Git" />
           <h4>Git</h4>
@@ -64,9 +62,6 @@ export const SkillsComponent = props => {
           <img src={htmlIcon} alt="Icon HTML" />
           <h4>HTML</h4>
         </div>
-      </div>
-
-      <div className="row">
         <div>
           <img src={slackIcon} alt="Icon Slack" />
           <h4>Slack</h4>
@@ -88,6 +83,6 @@ export const SkillsComponent = props => {
           <h4>Notion</h4>
         </div>
       </div>
-    </main>
+    </S.Skills>
   );
 }

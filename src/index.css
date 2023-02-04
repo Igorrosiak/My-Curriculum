@@ -7,3 +7,7 @@
   color: white;
   font-family: 'Segoe UI', sans-serif;
 }
+
+body{
+  overflow-x: hidden;
+}

@@ -1,5 +1,5 @@
-import "./introduction-styles"
 import * as S from "./introduction-styles";
+import fotoPessoal from "../../../assets/foto-pessoal.png"
 
 export const IntroductionComponent = props => {
   return (
@@ -15,7 +15,7 @@ export const IntroductionComponent = props => {
         <div className="circle">
 
         </div>
-        <img src="#" alt="Imagem de Igor Rosiak" />
+        <img src={fotoPessoal} alt="Imagem de Igor Rosiak" />
       </div>
 
       <div className="right-container">

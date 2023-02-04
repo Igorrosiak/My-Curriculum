@@ -1,18 +1,25 @@
 import styled from "styled-components"
 import { themes } from "../../../utils/theme"
 
-export const Introduction = styled.div `
+export const Introduction = styled.div`
   background-color: ${themes.colors.background_strong};
   width: 83vw;
-  height: 90vh;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: flex-start;
-  padding-top: 13vh;
+  padding-top: 17vh;
+
+  @media screen and (max-width: 741px){      
+    padding-top: 5vh;
+  } 
+
+  & > div {
+    flex: 1 0 22.5%;
+  }
 
   div.left-container{
-    width: 33%;
 
     h2{
       font-size: 3rem;
@@ -39,27 +46,46 @@ export const Introduction = styled.div `
     button{
       background-color: ${themes.colors.purple_strong};
       border: none;
-      width: 50%;
+      width: 70%;
       height: 50px;
       font-size: 1.3rem;
       font-weight: bold;
+
+      @media screen and (max-width: 1280px){      
+        width: 80%;
+      } 
+
+      @media screen and (max-width: 800px){      
+        width: 90%;
+      } 
+
+      @media screen and (max-width: 741px){      
+        width: 60%;
+      } 
     }
   }
 
   div.center-container{
-    width: 33%;
+    margin-top: auto;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 741px){      
+      padding-top: 3vh;
+    } 
 
     div.circle{
 
     }
 
     img{
-
+      width: calc(450px + 16 * ((100vw - 280px) / (2560 - 280)))
     }
   }
 
   div.right-container{
-    width: 33%;
 
     div{
       h3{
@@ -77,5 +103,9 @@ export const Introduction = styled.div `
         font-weight: 600;
       }
     }
+
+    @media screen and (max-width: 1280px){      
+      margin-top: 2rem;
+    } 
   }
 `
