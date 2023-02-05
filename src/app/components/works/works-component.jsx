@@ -3,7 +3,7 @@ import seta from "../../../assets/seta.png"
 
 export const WorksComponent = props => {
   return (
-    <S.Works>
+    <S.Works id="works">
       <h2>Works</h2>
       <hr />
 

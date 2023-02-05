@@ -17,7 +17,7 @@ import notionIcon from "../../../assets/notion-icon.png"
 
 export const SkillsComponent = props => {
   return (
-    <S.Skills>
+    <S.Skills id="skills">
       <h2>Skills</h2>
       <hr />
       
