@@ -46,37 +46,62 @@ export const Works = styled.div`
       width: 80%;
 
       div.work{
-        margin-top: 1rem;
+        padding: 1.3em;
+        margin: 1rem auto 0 auto;
         width: 100%;
         background-color: ${themes.colors.background_light};
         border-radius: 10px;
         display: flex;
         justify-content: space-between;
 
+        @media screen and (max-width: 1000px){      
+          flex-direction: column;
+          width: 70%;
+          align-items: center;
+
+          div.left-section{
+            padding: 0 0 1rem 0 !important;
+          }
+          
+          div.right-section{
+            padding: 1rem 0 0 0 !important;
+            
+            ul{
+              padding: 0;
+              text-align: center;
+            }
+          }
+        }
+
+        @media screen and (max-width: 650px){      
+          width: 90%;
+        }
+
         div.left-section{
           display: flex;
           flex-direction: column;
-          padding-left: 1.5em;
 
           div.content{
-            padding-top: 1em;
             display: flex;
 
             img{
               margin: 0.3rem;
-              width: 100px;
-              background-color: purple;
+              height: 70px;
+              width: 70px;
             }
 
             div{
-              padding-left: 1em;
+              padding-left: 0.75em;
               display: flex;
               flex-direction: column;
+
               h5{
                 font-size: 2rem;
+                margin-bottom: 0.1rem;
               }
               p{
                 font-size: 1rem;
+                font-weight: lighter;
               }
             }
           }
@@ -84,9 +109,11 @@ export const Works = styled.div`
           ul.tags{
             display: flex;
             padding: 0;
+            margin: 0;
 
             li{
-              margin: 0.3rem;
+              font: normal 400 0.75rem 'Rowdies';
+              margin: 0.3rem 0.2rem;
               padding: 0.2rem 0.75rem;
               border: 1px solid ${themes.colors.gray};
               border-radius: 10px;
@@ -99,14 +126,22 @@ export const Works = styled.div`
           flex-direction: column;
           justify-content: center;
           align-items: center;
+
+          span{
+            font-weight: bold;
+          }
         }
 
         div.right-section{
-          padding-right: 1.5em;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          
+          ul{
+            padding: 0;
+            margin: 0;
+          }
         }
       }
     }

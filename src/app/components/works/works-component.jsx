@@ -1,5 +1,6 @@
 import * as S from "./works-styles";
 import seta from "../../../assets/seta.png"
+import logoDibba from "../../../assets/logo-dibba.png"
 
 export const WorksComponent = props => {
   return (
@@ -15,7 +16,7 @@ export const WorksComponent = props => {
           <div className="work">
             <div className="left-section">
               <div className="content">
-                <img src="#" alt="Logo Dibba" />
+                <img src={logoDibba} alt="Logo Dibba" />
                 <div>
                   <h5>Dibba</h5>
                   <p>Florianópolis, SC</p>
@@ -43,7 +44,7 @@ export const WorksComponent = props => {
           <div className="work">
             <div className="left-section">
               <div className="content">
-                <img src="#" alt="Logo Dibba" />
+                <img src={logoDibba} alt="Logo Dibba" />
                 <div>
                   <h5>Dibba</h5>
                   <p>Florianópolis, SC</p>
