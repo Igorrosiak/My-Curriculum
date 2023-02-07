@@ -86,7 +86,8 @@ export const Introduction = styled.div`
   }
 
   div.right-container{
-
+    padding-bottom: 1em;
+    
     div{
       h3{
         text-align: center;
