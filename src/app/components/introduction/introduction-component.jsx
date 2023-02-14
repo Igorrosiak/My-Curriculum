@@ -8,7 +8,7 @@ export const IntroductionComponent = props => {
         <h2>Igor <br /> Rosiak<strong>.</strong></h2>
         <hr />
         <p>17 anos, Estudante</p>
-        <button>Contact Me</button>
+        <button onClick={() => {window.location.href="#contact"}}>Contact Me</button>
       </div>
 
       <div className="center-container">

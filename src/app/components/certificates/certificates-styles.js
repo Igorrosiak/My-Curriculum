@@ -4,7 +4,8 @@ import { themes } from "../../../utils/theme"
 export const Certificates = styled.div`
   background-color: ${themes.colors.background_strong};
   width: 100vw;
-  height: 80vh;
+  min-height: 40vh;
+  max-height: 100vh;
   padding: 5vh 0;
   margin: auto;
   align-items: center;
@@ -25,7 +26,7 @@ export const Certificates = styled.div`
     margin: auto;
     padding-top: 1rem;
   }
-  
+
   div.carousel-caption{
     h3{
       color: black !important;
