@@ -1,6 +1,7 @@
 import * as S from "./works-styles";
 import seta from "../../../assets/seta.png"
 import logoDibba from "../../../assets/logo-dibba.png"
+import logoWint from "../../../assets/logo-wint.png"
 
 export const WorksComponent = props => {
   return (
@@ -24,7 +25,6 @@ export const WorksComponent = props => {
               </div>
               <ul className="tags">
                 <li>React</li>
-                <li>Java</li>
                 <li>Javascript</li>
               </ul>
             </div>
@@ -36,7 +36,7 @@ export const WorksComponent = props => {
             <div className="right-section">
               <ul>
                 <li>- Desenvolvimento Web</li>
-                <li>- Desenvolvimento Backend</li>
+                <li>- Infra</li>
                 <li>- Comunicação com time técnico</li>
               </ul>
             </div>
@@ -44,9 +44,9 @@ export const WorksComponent = props => {
           <div className="work">
             <div className="left-section">
               <div className="content">
-                <img src={logoDibba} alt="Logo Dibba" />
+                <img src={logoWint} alt="Logo Dibba" />
                 <div>
-                  <h5>Dibba</h5>
+                  <h5>Wint</h5>
                   <p>Florianópolis, SC</p>
                 </div>
               </div>
@@ -59,13 +59,13 @@ export const WorksComponent = props => {
             <div className="center-section">
               <span>2022</span>
               <span>-</span>
-              <span>Atualmente</span>
+              <span>2022</span>
             </div>
             <div className="right-section">
               <ul>
-                <li>- Desenvolvimento Web</li>
-                <li>- Desenvolvimento Backend</li>
-                <li>- Comunicação com time técnico</li>
+                <li>- Liderança</li>
+                <li>- Desenvolvimento Fullstack</li>
+                <li>- Comunicação com equipe escolar</li>
               </ul>
             </div>
           </div>
