@@ -11,7 +11,7 @@ export const CertificatesComponent = props => {
       <h2>Certificates</h2>
       <hr />
 
-      <Carousel variant="dark" className="w-50">
+      <Carousel slide={false} variant="dark" className="w-50">
         <Carousel.Item>
           <img
             className="d-block w-100"
