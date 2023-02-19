@@ -1,4 +1,5 @@
 import * as S from "./certificates-styles";
+import { Carousel } from "react-bootstrap";
 import javascript from "../../../assets/certificadoJavascript.png"
 import html from "../../../assets/certificadoHtml.png"
 import html2 from "../../../assets/certificadoHtml2.png"
@@ -12,20 +13,36 @@ export const CertificatesComponent = props => {
       <h2>Certificates</h2>
       <hr />
 
-      <div className="carrossel">
-        <div className="item">
-          <img src={javascript} alt="Diploma Javascript" />
-        </div>
-        <div className="item">
-          <img src={html} alt="Certificado " />
-        </div>
-        <div className="item">
-          <img src={html2} alt="Third slide" />
-        </div>
-        <div className="item">
-          <img src={algoritmos} alt="Third slide" />
-        </div>
-      </div>
+      <Carousel slide={false}>
+        <Carousel.Item>
+          <img
+            className="d-block w-50"
+            src={javascript}
+            alt="First slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-50"
+            src={html}
+            alt="Second slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-50"
+            src={html2}
+            alt="Third slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-50"
+            src={algoritmos}
+            alt="Third slide"
+          />
+        </Carousel.Item>
+      </Carousel>
     </S.Certificates>
   );
 }
