@@ -33,6 +33,7 @@ export const Works = styled.div`
       align-items: center;
       
       img{
+        display: none;
         width: 40px;
         height: 40px;  
       }
