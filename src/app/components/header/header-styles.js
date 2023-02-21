@@ -35,6 +35,11 @@ export const NavbarStyled = styled(Navbar)`
           color: ${themes.colors.light} !important;
           font-weight: normal;
           font-size: 1rem;
+          transition: 10000ms;
+
+          :hover{
+            border-bottom: 1px solid white;
+          }
         }
       }
     }
