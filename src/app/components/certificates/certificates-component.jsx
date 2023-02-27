@@ -4,6 +4,7 @@ import javascript from "../../../assets/certificadoJavascript.png"
 import html from "../../../assets/certificadoHtml.png"
 import html2 from "../../../assets/certificadoHtml2.png"
 import algoritmos from "../../../assets/certificadoAlgoritmos.png"
+import tecnico from "../../../assets/certificadoTecnico.png"
 
 export const CertificatesComponent = props => {
 
@@ -17,15 +18,22 @@ export const CertificatesComponent = props => {
         <Carousel.Item>
           <img
             className="d-block w-50"
-            src={javascript}
+            src={tecnico}
             alt="First slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-50"
-            src={html}
+            src={javascript}
             alt="Second slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-50"
+            src={html}
+            alt="Third slide"
           />
         </Carousel.Item>
         <Carousel.Item>
@@ -39,7 +47,7 @@ export const CertificatesComponent = props => {
           <img
             className="d-block w-50"
             src={algoritmos}
-            alt="Third slide"
+            alt="Forthy slide"
           />
         </Carousel.Item>
       </Carousel>
