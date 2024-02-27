@@ -1,3 +1,4 @@
+# My-Curriculum
 This project was created in 2022.
 
 It consists of a Web Page for my personal curriculum.
