@@ -1,7 +1,7 @@
 This project was created in 2022.
 
-Consists of an Page Web for a my personal curriculum.
+It consists of a Web Page for my personal curriculum.
 
-This application utilize: React, React-Bootstrap, SASS, Styled-Components and React-Router-DOM
+This application uses: React, React-Bootstrap, SASS, Styled-Components and React-Router-DOM
 
-You can use it running "npm install" on the terminal of main path AND running "npm start" after install all dependencies.
+You can use it running "npm install" in the main path terminal AND running "npm start" after installing all dependencies.
